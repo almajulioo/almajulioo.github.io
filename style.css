@@ -15,7 +15,7 @@ body {
 
 .cvkiri {
   background-color: rgb(8 42 77);
-  height: 100vh;
+  height: auto;
   padding: 30px;
   color: white;
   width: 25%;
@@ -59,7 +59,7 @@ body {
 }
 
 .cvkanan {
-  height: 100vh;
+  height: max-content;
   color: rgb(8 42 77);
   width: 80%;
   padding: 50px 30px;
