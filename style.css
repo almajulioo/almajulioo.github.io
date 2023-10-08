@@ -1,80 +1,78 @@
-:root {
-  --primary: #7456ff;
-  --secondary: #8368ff;
-  --tertier: #a693ff;
-  --prgrey: #707070;
-  --srgrey: #999999;
-}
-
-.primary {
-  color: var(--primary);
-}
-
-.srgrey {
-  color: var(--srgrey);
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", monospace;
+  margin: 0;
 }
 
 body {
-  margin: 15px 90px;
-  background-color: #0f0f0f;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.nav {
+.cv {
   display: flex;
-  margin-top: 40px;
-  align-items: center;
-  justify-content: space-between;
 }
 
-.nav--list {
+.cvkiri {
+  background-color: rgb(8 42 77);
+  height: 100vh;
+  padding: 30px;
+  color: white;
+  width: 25%;
   display: flex;
-  list-style-type: none;
-  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.nav--each {
-  color: #ffffff;
+.cvkiri--img {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1/1;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: all 0.5s;
+}
+
+.cvkiri--img:hover {
+  border-radius: 50%;
+}
+
+.cvkiri--title {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.cvkiri--link {
+  transition: all 0.3s;
+  color: white;
   text-decoration: none;
-  font-size: 20px;
 }
 
-.nav--title {
-  margin: 0;
-  font-size: 24px;
+.cvkiri--link:active {
+  color: red !important;
 }
 
-.cv--title {
-  margin: 0;
-  border-bottom: 3px solid var(--srgrey);
-  width: fit-content;
+.cvkiri--link:hover {
+  color: blue;
 }
 
-.cv--subtitle {
-  margin: 0;
-  padding: 10px 0;
+.cvkanan {
+  height: 100vh;
+  color: rgb(8 42 77);
+  width: 80%;
+  padding: 50px 30px;
 }
 
-.cv--deskripsi {
-  margin: 0;
-  color: var(--srgrey);
+.cvkanan--title {
+  font-size: 40px;
+}
+
+.cvkanan--h2 {
+  margin-top: 10px;
+}
+
+.cvkanan--text {
   text-align: justify;
-  padding: 20px 0;
-}
-
-.cv--batas {
-  margin: 0;
-  border-color: var(--srgrey);
-}
-
-.cv--bawah {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.titlebawah {
-  /* border-bottom: 3px solid var(--srgrey);
-  width: fit-content; */
 }
