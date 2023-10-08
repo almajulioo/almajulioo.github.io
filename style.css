@@ -76,3 +76,7 @@ body {
 .cvkanan--text {
   text-align: justify;
 }
+
+.cvkanan--text::first-letter {
+  color: blue;
+}
